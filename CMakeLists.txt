@@ -4,15 +4,6 @@ cmake_minimum_required(VERSION 3.25 FATAL_ERROR)
 # Create project
 project (ShellProject VERSION 1.0.0 DESCRIPTION "A nice shell project" LANGUAGES C)
 
-# Establecer la variable de entorno CONFIG_FILE_PATH
-set(ENV{CONFIG_FILE_PATH} "${CMAKE_SOURCE_DIR}/config.json")
-
-# Establecer la variable de entorno MONITOR_PATH
-set(ENV{CONFIG_FILE_PATH} "${CMAKE_SOURCE_DIR}/Metrics_Monitoring_System/build/metrics")
-
-# Establecer la variable de entorno MONITOR_EXECUTABLE
-set(ENV{MONITOR_EXECUTABLE} "./metrics")
-
 # Flags for compiling
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_C_FLAGS_DEBUG "-g -O0 -Wall -Wpedantic -Werror -Wextra -Wunused-parameter -Wmissing-prototypes -Wstrict-prototypes")
