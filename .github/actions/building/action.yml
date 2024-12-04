@@ -39,7 +39,3 @@ runs:
     - name: Set libpromhttp.so path
       shell: bash
       run: echo "LD_LIBRARY_PATH=${GITHUB_WORKSPACE}/Metrics_Monitoring_System/prometheus-client-c/buildpromhttp/libpromhttp.so:/usr/local/lib:\$LD_LIBRARY_PATH" >> $GITHUB_ENV
-
-    - name: Set environment variables
-      shell: bash
-      run: ./set_env.sh
