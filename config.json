@@ -1,0 +1,13 @@
+{
+  "sleep_time": 1,
+  "metrics": {
+    "cpu_usage": true,
+    "memory_usage": true,
+    "disk_usage": false,
+    "network_usage": false,
+    "processes_running": true,
+    "context_switches": true,
+    "fragmentation": true,
+    "policies": true
+  }
+}

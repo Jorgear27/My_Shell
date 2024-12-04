@@ -1,0 +1,29 @@
+echo "Listing files in the current directory..."
+ls -l > ls_output.txt
+
+echo "Displaying the contents of ls_output.txt..."
+cat ls_output.txt
+
+echo "Counting the number of files in the current directory..."
+ls -1 | wc -l
+
+echo "Finding all .txt files in the current directory..."
+ls -1 | grep ".txt" > txt_files.txt
+
+echo "Displaying the contents of txt_files.txt..."
+cat txt_files.txt
+
+echo "Sorting the contents of txt_files.txt..."
+sort txt_files.txt > sorted_txt_files.txt
+
+echo "Displaying the contents of sorted_txt_files.txt..."
+cat sorted_txt_files.txt
+
+echo "Running sleep command in the background..."
+sleep 10 &
+
+echo "Displaying the current date and time..."
+date
+
+echo "Counting the number of letters in the echo statement..."
+echo "This is a sample text" | wc -m
